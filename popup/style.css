@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700;800;900&display=swap");
+
+* {
+	font-family: "Poppins", "sans-serif";
+	color: white;
+
+	transition: 200ms ease-in-out;
+}
+
+/* Shadows */
+.shadow-lg {
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.shadow-xl {
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.shadow-2xl {
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.shadow-float {
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+		rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.shadow-float-lg {
+	box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+body {
+	background-color: linear(#EAF6FF, #F3F4FF, 45deg);
+}
+
+/* Buttons */
+.btn {
+	background-color: #7c83f3;
+	box-shadow: rgba(149, 157, 165, 1) 0px 4px 12px;
+
+	border: none;
+	border-radius: 8px;
+	padding: 12px;
+	margin: 8px 0;
+}
+
+.btn:hover {
+	box-shadow: rgb(79, 83, 87) 0px 8px 24px;
+	cursor: pointer;
+
+	transform: scale(1.1);
+	z-index: 10;
+}
+
+/* Card */
+.card {
+	background-color: white;
+	border-radius: 8px;
+	padding: 16px;
+	margin: 16px;
+}
+
+.card-title {
+	margin: 0 0 16px;
+	font-size: 0.8rem;
+
+	color: #7c83f3;
+}
+
+/* Tooltip */
+.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+
+	z-index: 1;
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+    opacity: 0;
+	width: 120px;
+	background-color: #191250;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	top: 120%;
+	left: 50%;
+	margin-left: -60px;
+
+	z-index: 10;
+}
+
+.tooltip .tooltiptext::after {
+	content: "";
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent #191250 transparent;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+    opacity: 1;
+}
+
+/* Specific Styles */
+.app-bar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	margin: 20px;
+}
+
+.app-bar img {
+	width: 90px;
+	margin-right: 50px;
+}
+
+.app-bar-title {
+	font-size: 1.25rem;
+	color: #191250;
+}
+
+.quick-options {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
+}
+
+.img-icon {
+	width: 30px;
+}
+
+.remove-btn {
+	background-color: #ed5353;
+}
+
+footer {
+	display: flex;
+	justify-content: space-evenly; 
+	align-items: center;
+}
+
+.footer-btn {
+	background: none;
+	border: none;
+}
+
+.footer-btn:hover .icon {
+	transform: rotate(-45deg) scale(1.1);
+	cursor: pointer;
+}
+
+.footer-btn .icon {
+	color: #191250;
+	font-size: 2.5rem;
+	margin: 0;
+}

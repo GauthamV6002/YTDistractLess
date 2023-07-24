@@ -1,0 +1,22 @@
+/* All classes are prefixed with ytdl-, as to not interfere with youtube's CSS classes */
+
+.ytdl-hidden  {
+    visibility: hidden;
+}
+
+.ytdl-wrapper {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ytdl-hidden-caption {
+    position: absolute;
+    color: white;
+    font-size: 14px;
+
+    width: 60%;
+    text-align: center;
+}
