@@ -5,8 +5,6 @@ let maxCheckedIndex = -1;
 
 let titleCheckDelay = 500;
 
-// chrome.storage.sync.set({ blockedKeywords: ["technoblade", "naruto", "bedwars", "skywars", "minecraft", "academia", "deku", "todoroki", "bakugo", "crunchyroll", "comedy"] });
-
 // Get blocked keywords
 chrome.storage.sync.get(["blockedKeywords"], ({ blockedKeywords: words }) => {
     blockedKeywords = words;
